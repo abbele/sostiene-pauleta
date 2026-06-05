@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sostiene Pauleta</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#FF6B35">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Pauleta">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-content">
+      <!-- Avatar SVG di Pauleta -->
+      <div class="avatar-wrapper" aria-hidden="true">
+        <svg class="avatar-svg" viewBox="0 0 90 110" xmlns="http://www.w3.org/2000/svg">
+          <!-- Collo -->
+          <rect x="36" y="72" width="18" height="14" rx="4" fill="#F2C9A0" stroke="#1A1A2E" stroke-width="2.5"/>
+          <!-- Corpo / spalle -->
+          <rect x="14" y="82" width="62" height="28" rx="10" fill="#2B5BA8" stroke="#1A1A2E" stroke-width="2.5"/>
+          <!-- Colletto camicia -->
+          <polygon points="45,82 37,90 45,88" fill="#FFFFFF" stroke="#1A1A2E" stroke-width="1.5"/>
+          <polygon points="45,82 53,90 45,88" fill="#FFFFFF" stroke="#1A1A2E" stroke-width="1.5"/>
+          <!-- Testa -->
+          <ellipse cx="45" cy="46" rx="26" ry="30" fill="#F2C9A0" stroke="#1A1A2E" stroke-width="3"/>
+          <!-- Capelli - corpo principale scuro -->
+          <ellipse cx="45" cy="22" rx="26" ry="14" fill="#1A1A2E"/>
+          <!-- Capelli - parte superiore con volume -->
+          <path d="M19 30 Q16 18 24 12 Q32 6 45 8 Q58 6 66 12 Q74 18 71 30" fill="#1A1A2E" stroke="#1A1A2E" stroke-width="1"/>
+          <!-- Frangetta irregolare (non dritta) -->
+          <path d="M22 30 Q26 24 30 27 Q34 22 38 26 Q41 21 45 24 Q49 20 53 25 Q57 22 61 26 Q65 23 68 29"
+                fill="#1A1A2E" stroke="#1A1A2E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Capelli laterali -->
+          <path d="M19 30 Q17 42 19 55 Q22 62 24 65" fill="none" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+          <path d="M71 30 Q73 42 71 55 Q68 62 66 65" fill="none" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+          <!-- Ciocche di capelli che scendono -->
+          <path d="M22 40 Q18 50 20 60" fill="none" stroke="#1A1A2E" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M68 40 Q72 50 70 60" fill="none" stroke="#1A1A2E" stroke-width="3.5" stroke-linecap="round"/>
+          <!-- Sopracciglio sinistro (alzato — espressione sorpresa/indignata) -->
+          <path d="M28 38 Q34 33 40 36" fill="none" stroke="#1A1A2E" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Sopracciglio destro (inclinato verso il centro) -->
+          <path d="M50 36 Q56 33 62 37" fill="none" stroke="#1A1A2E" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Occhio sinistro (più aperto, sorpreso) -->
+          <ellipse cx="34" cy="43" rx="6" ry="7" fill="#FFFFFF" stroke="#1A1A2E" stroke-width="2"/>
+          <ellipse cx="34" cy="44" rx="3.5" ry="4" fill="#4A2C0A"/>
+          <ellipse cx="34" cy="44" rx="2" ry="2.5" fill="#1A1A2E"/>
+          <circle cx="35.5" cy="42.5" r="1.2" fill="#FFFFFF"/>
+          <!-- Occhio destro (più aperto, sorpreso) -->
+          <ellipse cx="56" cy="43" rx="6" ry="7" fill="#FFFFFF" stroke="#1A1A2E" stroke-width="2"/>
+          <ellipse cx="56" cy="44" rx="3.5" ry="4" fill="#4A2C0A"/>
+          <ellipse cx="56" cy="44" rx="2" ry="2.5" fill="#1A1A2E"/>
+          <circle cx="57.5" cy="42.5" r="1.2" fill="#FFFFFF"/>
+          <!-- Naso a punta (catalano, caratteristico) -->
+          <path d="M43 48 Q45 55 47 48" fill="none" stroke="#1A1A2E" stroke-width="2" stroke-linecap="round"/>
+          <path d="M45 55 Q42 58 40 57" fill="none" stroke="#1A1A2E" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M45 55 Q48 58 50 57" fill="none" stroke="#1A1A2E" stroke-width="1.8" stroke-linecap="round"/>
+          <!-- Bocca aperta (sta per dire qualcosa!) -->
+          <path d="M33 63 Q45 72 57 63" fill="#FFFFFF" stroke="#1A1A2E" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M33 63 Q45 60 57 63" fill="#E03030" stroke="#1A1A2E" stroke-width="2"/>
+          <!-- Lingua -->
+          <ellipse cx="45" cy="67" rx="6" ry="3" fill="#E03030"/>
+          <!-- Zigomi alti (leggero blush) -->
+          <ellipse cx="26" cy="54" rx="5" ry="3" fill="#F4A0A0" opacity="0.5"/>
+          <ellipse cx="64" cy="54" rx="5" ry="3" fill="#F4A0A0" opacity="0.5"/>
+          <!-- Linee espressione sul lato (indignazione) -->
+          <line x1="14" y1="40" x2="18" y2="42" stroke="#1A1A2E" stroke-width="2" stroke-linecap="round"/>
+          <line x1="14" y1="46" x2="19" y2="46" stroke="#1A1A2E" stroke-width="2" stroke-linecap="round"/>
+          <line x1="76" y1="40" x2="72" y2="42" stroke="#1A1A2E" stroke-width="2" stroke-linecap="round"/>
+          <line x1="76" y1="46" x2="71" y2="46" stroke="#1A1A2E" stroke-width="2" stroke-linecap="round"/>
+          <!-- Esclamativo sopra la testa -->
+          <text x="74" y="14" font-family="Bangers, cursive" font-size="18" fill="#E03030" stroke="#1A1A2E" stroke-width="1" paint-order="stroke">!</text>
+        </svg>
+      </div>
+
+      <div class="header-text">
+        <h1>SOSTIENE<br>PAULETA</h1>
+        <p class="sottotitolo">Il fedele cronista delle sue massime</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- ── VINCITORE DEL GIORNO ── -->
+    <section class="vincitore-section" aria-label="Frase del giorno">
+      <div class="vincitore-box" id="vincitore-box">
+        <!-- Popolato da JS -->
+      </div>
+    </section>
+
+    <!-- ── LISTA FRASI ── -->
+    <section aria-label="Frasi di Pauleta">
+      <div class="frasi-list" id="frasi-list" role="list">
+        <!-- Popolato da JS -->
+      </div>
+    </section>
+
+    <!-- ── STORICO ── -->
+    <section class="storico-section" aria-label="Storico giorni precedenti">
+      <button class="storico-toggle" id="storico-toggle" aria-expanded="false" aria-controls="storico-content">
+        <span>📅 STORICO GIORNI PRECEDENTI</span>
+        <span class="arrow" aria-hidden="true">▼</span>
+      </button>
+      <div class="storico-content" id="storico-content" role="region">
+        <!-- Popolato da JS al click -->
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>Con affetto e cronaca fedele &mdash; Sostiene Pauleta &copy; 2025</p>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>

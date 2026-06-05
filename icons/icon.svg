@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Sfondo -->
+  <rect width="512" height="512" rx="80" fill="#FF6B35"/>
+  <!-- Bordo fumetto -->
+  <rect x="12" y="12" width="488" height="488" rx="72" fill="none" stroke="#1A1A2E" stroke-width="20"/>
+  <!-- Pattern Benday dots decorativi -->
+  <circle cx="60" cy="60" r="10" fill="#1A1A2E" opacity="0.15"/>
+  <circle cx="100" cy="60" r="10" fill="#1A1A2E" opacity="0.15"/>
+  <circle cx="80" cy="90" r="10" fill="#1A1A2E" opacity="0.15"/>
+  <circle cx="452" cy="452" r="10" fill="#1A1A2E" opacity="0.15"/>
+  <circle cx="412" cy="452" r="10" fill="#1A1A2E" opacity="0.15"/>
+  <circle cx="432" cy="422" r="10" fill="#1A1A2E" opacity="0.15"/>
+  <!-- Testa di Pauleta semplificata -->
+  <!-- Collo -->
+  <rect x="216" y="350" width="80" height="60" rx="16" fill="#F2C9A0" stroke="#1A1A2E" stroke-width="10"/>
+  <!-- Corpo -->
+  <rect x="120" y="400" width="272" height="90" rx="36" fill="#2B5BA8" stroke="#1A1A2E" stroke-width="10"/>
+  <!-- Testa -->
+  <ellipse cx="256" cy="240" rx="120" ry="140" fill="#F2C9A0" stroke="#1A1A2E" stroke-width="12"/>
+  <!-- Capelli -->
+  <ellipse cx="256" cy="120" rx="120" ry="65" fill="#1A1A2E"/>
+  <path d="M136 150 Q128 100 160 70 Q200 40 256 44 Q312 40 352 70 Q384 100 376 150" fill="#1A1A2E"/>
+  <!-- Frangetta irregolare -->
+  <path d="M136 165 Q155 130 175 150 Q195 120 215 142 Q235 118 256 138 Q277 118 297 142 Q317 122 337 148 Q357 130 376 162"
+        fill="#1A1A2E" stroke="#1A1A2E" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Capelli laterali lunghi -->
+  <path d="M136 165 Q120 220 128 290 Q134 320 140 340" fill="none" stroke="#1A1A2E" stroke-width="22" stroke-linecap="round"/>
+  <path d="M376 165 Q392 220 384 290 Q378 320 372 340" fill="none" stroke="#1A1A2E" stroke-width="22" stroke-linecap="round"/>
+  <!-- Sopracciglia espressive -->
+  <path d="M168 198 Q196 178 220 192" fill="none" stroke="#1A1A2E" stroke-width="10" stroke-linecap="round"/>
+  <path d="M292 192 Q316 178 344 196" fill="none" stroke="#1A1A2E" stroke-width="10" stroke-linecap="round"/>
+  <!-- Occhi sorpresi -->
+  <ellipse cx="200" cy="220" rx="28" ry="32" fill="#FFFFFF" stroke="#1A1A2E" stroke-width="9"/>
+  <ellipse cx="200" cy="224" rx="16" ry="19" fill="#4A2C0A"/>
+  <ellipse cx="200" cy="224" rx="10" ry="12" fill="#1A1A2E"/>
+  <circle cx="207" cy="216" r="6" fill="#FFFFFF"/>
+  <ellipse cx="312" cy="220" rx="28" ry="32" fill="#FFFFFF" stroke="#1A1A2E" stroke-width="9"/>
+  <ellipse cx="312" cy="224" rx="16" ry="19" fill="#4A2C0A"/>
+  <ellipse cx="312" cy="224" rx="10" ry="12" fill="#1A1A2E"/>
+  <circle cx="319" cy="216" r="6" fill="#FFFFFF"/>
+  <!-- Naso a punta caratteristico -->
+  <path d="M246 255 Q256 290 266 255" fill="none" stroke="#1A1A2E" stroke-width="8" stroke-linecap="round"/>
+  <path d="M256 290 Q240 304 228 300" fill="none" stroke="#1A1A2E" stroke-width="7" stroke-linecap="round"/>
+  <path d="M256 290 Q272 304 284 300" fill="none" stroke="#1A1A2E" stroke-width="7" stroke-linecap="round"/>
+  <!-- Bocca aperta -->
+  <path d="M190 328 Q256 368 322 328" fill="#FFFFFF" stroke="#1A1A2E" stroke-width="9" stroke-linecap="round"/>
+  <path d="M190 328 Q256 312 322 328" fill="#E03030" stroke="#1A1A2E" stroke-width="8"/>
+  <!-- Punto esclamativo -->
+  <text x="370" y="80" font-family="Arial Black, sans-serif" font-size="90" font-weight="900" fill="#E03030" stroke="#1A1A2E" stroke-width="6" paint-order="stroke">!</text>
+  <!-- Lettere SP -->
+  <text x="90" y="490" font-family="Arial Black, sans-serif" font-size="52" font-weight="900" fill="#FFFFFF" stroke="#1A1A2E" stroke-width="5" paint-order="stroke" opacity="0.6">SP</text>
+</svg>
