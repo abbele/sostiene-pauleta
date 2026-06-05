@@ -4,7 +4,7 @@
   "description": "Il contatore delle frasi leggendarie di Pauleta",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#D4956A",
+  "background_color": "#F5A0C0",
   "theme_color": "#FF6B35",
   "orientation": "portrait",
   "icons": [
