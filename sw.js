@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pauleta-v1';
+const CACHE_NAME = 'pauleta-v3';
 const ASSETS = [
   './index.html',
   './styles/main.css',

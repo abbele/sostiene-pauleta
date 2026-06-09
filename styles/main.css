@@ -293,18 +293,87 @@ h1 {
   animation: pop 0.35s cubic-bezier(0.36, 0.07, 0.19, 0.97);
 }
 
-/* ── ONOMATOPEA FLUTTUANTE ── */
-.onomatopea {
+/* ── BALLOON DEL CRONISTA ── */
+.commento-bubble {
   position: fixed;
-  font-family: 'Bangers', cursive;
-  font-size: 1.8rem;
-  color: var(--rosso);
-  text-shadow: 2px 2px 0px var(--nero);
-  pointer-events: none;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  max-width: 380px;
+  background: var(--bianco);
+  border: 4px solid var(--nero);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 14px 18px 12px;
   z-index: 9999;
-  animation: floatUp 0.8s ease-out forwards;
-  white-space: nowrap;
-  letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Codina del fumetto, in basso a sinistra */
+.commento-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 36px;
+  width: 0; height: 0;
+  border-left: 12px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 16px solid var(--nero);
+}
+.commento-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 39px;
+  width: 0; height: 0;
+  border-left: 9px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 12px solid var(--bianco);
+}
+
+.commento-label {
+  font-family: 'Bangers', cursive;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  color: var(--rosso);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.commento-testo {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.35;
+  color: var(--nero);
+}
+
+.commento-hint {
+  margin-top: 8px;
+  font-size: 0.65rem;
+  font-style: italic;
+  opacity: 0.5;
+  text-align: right;
+}
+
+.commento-bubble.entra {
+  animation: balloonEntra 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+}
+.commento-bubble.esci {
+  animation: balloonEsci 0.3s ease-in forwards;
+}
+
+@keyframes balloonEntra {
+  0%   { opacity: 0; transform: translateX(-50%) translateY(30px) scale(0.85); }
+  100% { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+}
+@keyframes balloonEsci {
+  0%   { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(20px) scale(0.9); }
 }
 
 /* ── STORICO ── */
@@ -412,12 +481,6 @@ footer {
   40%  { transform: scale(1.35); }
   70%  { transform: scale(0.92); }
   100% { transform: scale(1); }
-}
-
-@keyframes floatUp {
-  0%   { opacity: 1; transform: translateY(0) scale(1) rotate(-5deg); }
-  60%  { opacity: 1; }
-  100% { opacity: 0; transform: translateY(-70px) scale(1.5) rotate(8deg); }
 }
 
 @keyframes wiggle {
